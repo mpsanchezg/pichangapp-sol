@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.shared.PichangaDetailsFragment">
+
+    <TextView
+        android:id="@+id/pichangaDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/pichanga_details"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/pichangaOrganizerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/organizer_team"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/detailsVerticalGuideline2"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/detailsVerticalGuideline"
+        app:layout_constraintTop_toTopOf="@+id/detailsHorizontalGuideline"
+        app:layout_constraintVertical_bias="0"
+        android:padding="4dp"/>
+
+    <TextView
+        android:id="@+id/pichangaDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/date"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/detailsVerticalGuideline2"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/detailsVerticalGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/pichangaOrganizerLabel"
+        app:layout_constraintVertical_bias="0"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/pichangaPlaceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/place"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/detailsVerticalGuideline2"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/detailsVerticalGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/pichangaDateLabel"
+        app:layout_constraintVertical_bias="0"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/pichangaInstructionsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/instructions"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/detailsVerticalGuideline2"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@+id/detailsVerticalGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/placeMapView"
+        app:layout_constraintVertical_bias="0"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/pichangaOrganizerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/organizer_team"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/detailsVerticalGuideline2"
+        app:layout_constraintStart_toEndOf="@+id/pichangaOrganizerLabel"
+        app:layout_constraintTop_toTopOf="@+id/detailsHorizontalGuideline"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintVertical_bias="0"
+        android:padding="4dp" />
+
+    <TextView
+        android:id="@+id/pichangaDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="@string/date"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/detailsVerticalGuideline2"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/pichangaDateLabel"
+        app:layout_constraintTop_toBottomOf="@id/pichangaOrganizerTextView"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/pichangaPlaceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:text="@string/place"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/detailsVerticalGuideline2"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@+id/pichangaPlaceLabel"
+        app:layout_constraintTop_toBottomOf="@id/pichangaDateTextView"
+        app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/pichangaInstructionsTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:maxLines="9"
+        android:text="@string/loremIpsum"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@id/detailsVerticalGuideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/detailsVerticalGuideline"
+        app:layout_constraintTop_toBottomOf="@id/pichangaInstructionsLabel"
+        app:layout_constraintVertical_bias="0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/detailsHorizontalGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/detailsVerticalGuideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/detailsVerticalGuideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/placeMapView"
+        android:layout_width="0dp"
+        android:layout_height="154dp"
+        android:contentDescription="@string/mapView"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="@id/detailsVerticalGuideline2"
+        app:layout_constraintStart_toStartOf="@id/detailsVerticalGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/pichangaPlaceLabel" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/joinToPichanga"
+        android:contentDescription="@string/joinToPichanga"
+        android:src="@drawable/ic_join_24"
+        app:layout_constraintEnd_toStartOf="@id/detailsVerticalGuideline2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

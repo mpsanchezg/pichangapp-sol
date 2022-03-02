@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_upcoming_pichangas">
+
+    <fragment
+        android:id="@+id/navigation_upcoming_pichangas"
+        android:name="cl.sangut.pichangapp.view.upcoming_pichangas.UpcomingPichangasFragment"
+        android:label="@string/title_upcoming_pichangas"
+        tools:layout="@layout/fragment_upcoming_pichangas" >
+        <action
+            android:id="@+id/goToPichangaDetails"
+            app:destination="@id/pichangaDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_my_pichangas"
+        android:name="cl.sangut.pichangapp.view.my_pichangas.MyPichangasFragment"
+        android:label="@string/title_my_pichangas"
+        tools:layout="@layout/fragment_my_pichangas" >
+        <action
+            android:id="@+id/goToNewPichangaFragment"
+            app:destination="@id/navigation_new_pichanga" />
+        <action
+            android:id="@+id/goToPichangaDetails"
+            app:destination="@id/pichangaDetailsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="cl.sangut.pichangapp.view.team_profile.TeamProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/navigation_new_pichanga"
+        android:name="cl.sangut.pichangapp.view.my_pichangas.NewPichangaFragment"
+        android:label="@string/title_new_pichanga"
+        tools:layout="@layout/fragment_new_pichanga" >
+        <action
+            android:id="@+id/goToMyPichangas"
+            app:destination="@id/navigation_my_pichangas" />
+        <argument
+            android:name="userUuid"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/pichangaDetailsFragment"
+        android:name="cl.sangut.pichangapp.view.shared.PichangaDetailsFragment"
+        android:label="@string/pichanga_details"
+        tools:layout="@layout/fragment_pichanga_details">
+        <argument
+            android:name="pichangaId"
+            android:defaultValue="0"
+            app:argType="string" />
+    </fragment>
+</navigation>

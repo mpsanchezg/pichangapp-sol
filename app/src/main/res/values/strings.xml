@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">PichangApp</string>
+    <string name="title_upcoming_pichangas">Próximas Pichangas</string>
+    <string name="title_my_pichangas">Mis Pichangas</string>
+    <string name="title_profile">Mi Equipo</string>
+    <string name="title_new_pichanga">Crear Pichanga</string>
+    <string name="new_pichanga_button">agregar nueva pichanga</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="onrganised_pichanga">Organizadas</string>
+    <string name="participated_pichangas">Participadas</string>
+    <string name="pichanga_list_refresh_error">Ocurrió un error. Intente nuevamente.</string>
+    <string name="organizer_team">Equipo Organizador</string>
+    <string name="date">Fecha y hora</string>
+    <string name="place">Lugar</string>
+    <string name="pichanga_details">Detalles Pichanga</string>
+    <string name="instructions">Instrucciones</string>
+    <string name="joinToPichanga">Unirme</string>
+    <string name="loremIpsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quam leo, tempus nec libero nec, porttitor sagittis nisi. Sed aliquet, augue in luctus tempus, nibh dui molestie orci, ut congue justo velit in orci. Quisque nec nulla id dolor varius lacinia. Vivamus nec efficitur lacus. Curabitur enim est, dictum non magna eget, semper aliquam lectus. Nulla venenatis, eros id elementum accumsan, nibh nisi consectetur quam, nec rhoncus sapien arcu vitae neque. Etiam hendrerit ullamcorper iaculis. Fusce placerat quam vel nisi varius efficitur. Sed et lectus quis sem gravida pulvinar quis quis augue. Nullam blandit sollicitudin quam, quis scelerisque libero placerat a. Ut et odio sit amet justo vehicula suscipit eu sed orci.</string>
+    <string name="mapView">Mapa del lugar</string>
+    <string name="team_name">Nombre</string>
+    <string name="team_email">Email</string>
+    <string name="team_category">Categoría</string>
+    <string name="team_image">Imagen del Equipo</string>
+    <string name="edit">Editar</string>
+    <string name="details_text">Detalle</string>
+</resources>
